@@ -1,0 +1,17 @@
+{
+	"name": "peterbodnar.com/bsqr",
+	"description": "By Square document encoding, parsing and rendering utilities",
+	"keywords": ["bysquare", "paybysquare"],
+	"license": ["BSD-3-Clause", "GPL-2.0", "GPL-3.0"],
+	"autoload": {"psr-4": {"com\\peterbodnar\\bsqr\\": "src/"}},
+	"require": {
+		"php": "^5.4 || ^7.0",
+		"peterbodnar.com/base32": "^1.0",
+		"peterbodnar.com/cmd": "^1.0",
+		"peterbodnar.com/mx2svg": "^1.0",
+		"peterbodnar.com/qrcoder": "^1.0"
+	},
+	"require-dev": {
+		"nette/tester": "^1.7"
+	}
+}
