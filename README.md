@@ -1,6 +1,6 @@
 # BySquare
 
-By Square document encoding, rendering and parsing utilitis
+By Square document encoding, rendering and parsing utilities
 
 
 ## Instalation
@@ -68,7 +68,7 @@ Use any qr-code library to encode/render data to qr matrix/image.
 
 use com\peterbodnar\bsqr;
 
-$bsqrCoder = new bsqr\utils\coder();
+$bsqrCoder = new bsqr\utils\BsqrCoder();
 
 $document = $bsqrCoder->parse($bsqrData);
 ```
