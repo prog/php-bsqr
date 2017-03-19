@@ -15,4 +15,14 @@ class BankAccount extends Element {
 	/** @var string - SWIFT code. */
 	public $bic;
 
+
+	/**
+	 * @param string|null $iban
+	 * @param string|null $bic
+	 */
+	public function __construct($iban = NULL, $bic = NULL) {
+		$this->iban = $iban;
+		$this->bic = $bic;
+	}
+
 }

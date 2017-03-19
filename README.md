@@ -15,22 +15,13 @@ By Square document encoding, rendering and parsing utilities
 
 use com\peterbodnar\bsqr;
 
-$document = new bsqr\model\Pay();
-$document->payments[] = call_user_func(function() {
-	$payment = new bsqr\model\Payment();
-	$payment->dueDate = "0000-00-00";
-	$payment->amount = 123.45;
-	$payment->currencyCode = "EUR";
-	$payment->variableSymbol = "1234567890";
-	$payment->constantSymbol = "308";
-	$payment->bankAccounts[] = call_user_func(function() {
-		$bankAccount = new bsqr\model\BankAccount();
-		$bankAccount->iban = "SK3112000000198742637541";
-		$bankAccount->bic = "XXXXXXXXXXX";
-		return $bankAccount;
-	});
-	return $payment;
-});
+$document = (new bsqr\model\Payment())
+	->setDueDate("0000-00-00")
+	->setAmount(123.45)
+	->setCurrencyCode("EUR")
+	->setSymbols("1234567890", "308")
+	->addBankAccount("SK3112000000198742637541", "XXXXXXXXXXX")
+	->createPayDocument();
 ```
 
 
