@@ -138,7 +138,7 @@ class BsqrRenderer {
 	 * @param float $size - Size
 	 * @param float $rotate - Rotate (degrees)
 	 * @param Svg $svg - Image to render.
-	 * @return Svg
+	 * @return string
 	 */
 	protected function renderQrCode(array $pos, $size, $rotate, Svg $svg) {
 		$transform = "translate(" . ($pos[0]) . "," . ($pos[1]) . ")";

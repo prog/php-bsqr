@@ -9,6 +9,7 @@ use com\peterbodnar\bsqr\utils\BsqrRenderer;
 use com\peterbodnar\mx2svg\MxToSvg;
 use com\peterbodnar\qrcoder\QrCoder;
 use com\peterbodnar\qrcoder\QrCoderException;
+use com\peterbodnar\svg\Svg;
 
 
 
@@ -56,7 +57,7 @@ class BySquare {
 	 * Render by square document to svg image.
 	 *
 	 * @param model\Document $document - By Square Document
-	 * @return string
+	 * @return Svg
 	 * @throws BySquareException
 	 */
 	public function render(model\Document $document) {
