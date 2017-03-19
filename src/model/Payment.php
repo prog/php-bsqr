@@ -52,10 +52,14 @@ class Payment extends Element {
 	 * Set ammount.
 	 *
 	 * @param int|float|null $amount
+	 * @param string|NULL $currencyCode
 	 * @return static
 	 */
-	public function setAmount($amount) {
+	public function setAmount($amount, $currencyCode = NULL) {
 		$this->amount = $amount;
+		if (NULL !== $currencyCode) {
+			$this->setCurrencyCode($currencyCode);
+		}
 		return $this;
 	}
 

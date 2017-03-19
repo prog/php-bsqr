@@ -17,8 +17,7 @@ use com\peterbodnar\bsqr;
 
 $document = (new bsqr\model\Payment())
 	->setDueDate("0000-00-00")
-	->setAmount(123.45)
-	->setCurrencyCode("EUR")
+	->setAmount(123.45, "EUR")
 	->setSymbols("1234567890", "308")
 	->addBankAccount("SK3112000000198742637541", "XXXXXXXXXXX")
 	->createPayDocument();
