@@ -16,6 +16,7 @@ By Square document encoding, rendering and parsing utilities
 use com\peterbodnar\bsqr;
 
 $document = (new bsqr\model\Payment())
+	->setPaymentOrderOption()
 	->setDueDate("0000-00-00")
 	->setAmount(123.45, "EUR")
 	->setSymbols("1234567890", "308")
