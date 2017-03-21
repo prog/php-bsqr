@@ -11,7 +11,7 @@ class Payment extends Element {
 
 
 	/** @var bool */
-	public $paymentOrderOption = FALSE;
+	public $paymentOrderOption = TRUE;
 	/** @var int|null - Payment amount. */
 	public $amount;
 	/** @var string - Payment currency code, 3 letter ISO4217 code. */
