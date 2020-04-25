@@ -92,5 +92,5 @@ $document = $bsqrCoder->parse($bsqrData);
 
 ## Links
 
-- http://www.sbaonline.sk/sk/projekty/qr-platby/podmienky-pouzitia-specifikacia-standardu-pay-square.html
+- https://www.sbaonline.sk/wp-content/uploads/2020/03/podmienky-pouzitia-pay-by-square.pdf
 - http://www.bysquare.com/
