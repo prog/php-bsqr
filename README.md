@@ -92,5 +92,6 @@ $document = $bsqrCoder->parse($bsqrData);
 
 ## Links
 
-- https://www.sbaonline.sk/wp-content/uploads/2020/03/podmienky-pouzitia-pay-by-square.pdf
+- https://www.sbaonline.sk/projekt/projekty-z-oblasti-platobnych-sluzieb/
+- https://bsqr.co/schema/
 - http://www.bysquare.com/
