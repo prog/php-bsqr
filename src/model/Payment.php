@@ -34,6 +34,12 @@ class Payment extends Element {
 	public $standingOrderExt;
 	/** @var DirectDebitExt|null - Direct debit extension. Extends basic payment information with information required for identification and setup of direct debit. */
 	public $directDebitExt;
+	/** @var string|NULL - Beneficiary name  */
+	public $beneficiaryName;
+	/** @var string|NULL - Beneficiary address line 1 */
+	public $beneficiaryAddressLine1;
+	/** @var string|NULL - Beneficiary address line 2 */
+	public $beneficiaryAddressLine2;
 
 
 	/**
@@ -205,6 +211,41 @@ class Payment extends Element {
 	 */
 	public function setDirectDebitExt($directDebitExt) {
 		$this->directDebitExt = $directDebitExt;
+		return $this;
+	}
+
+	/**
+	 * Set beneficiary name
+	 *
+	 * @param string|null $beneficiaryName
+	 * @return static
+	 */
+	public function setBeneficiaryName($beneficiaryName): self
+	{
+		$this->beneficiaryName = $beneficiaryName;
+		return $this;
+	}
+
+	/**
+	 * Set beneficiary address line 1
+	 *
+	 * @param string|null $beneficiaryAddressLine1
+	 * @return static
+	 */
+	public function setBeneficiaryAddressLine1($beneficiaryAddressLine1): self
+	{
+		$this->beneficiaryAddressLine1 = $beneficiaryAddressLine1;
+		return $this;
+	}
+
+	/**
+	 * Set beneficiary address line 2
+	 * @param string|null $beneficiaryAddressLine2
+	 * @return static
+	 */
+	public function setBeneficiaryAddressLine2($beneficiaryAddressLine2): self
+	{
+		$this->beneficiaryAddressLine2 = $beneficiaryAddressLine2;
 		return $this;
 	}
 
