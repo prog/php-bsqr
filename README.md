@@ -50,6 +50,9 @@ $document = (new bsqr\model\Pay())
 		// ->setOriginatorsReferenceInformation("Originators Reference Information")
 		// ->setDirectDebitExt( /* Direct Debit Extension */ )
 		// ->setStandingOrderExt( /* Standing Order Extension */ )
+		// ->setBeneficiaryName("Beneficiary name")
+		// ->setBeneficiaryAddressLine1("Address 1")
+		// ->setBeneficiaryAddressLine2("Address 2")
 	)
 	->addPayment( /* 2nd payment */ )
 	->addPayment( /* 3rd payment */ );
@@ -92,6 +95,5 @@ $document = $bsqrCoder->parse($bsqrData);
 
 ## Links
 
-- https://www.sbaonline.sk/projekt/projekty-z-oblasti-platobnych-sluzieb/
-- https://bsqr.co/schema/
+- http://www.sbaonline.sk/sk/projekty/qr-platby/podmienky-pouzitia-specifikacia-standardu-pay-square.html
 - http://www.bysquare.com/

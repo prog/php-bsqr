@@ -134,6 +134,10 @@ class ClientDataEncoder {
 		if ($payment->directDebitExt) {
 			$values[] = $this->encodeDirectDebitExt($payment->directDebitExt);
 		}
+		$values[] = $this->encodeValue($payment->beneficiaryName);
+		$values[] = $this->encodeValue($payment->beneficiaryAddressLine1);
+		$values[] = $this->encodeValue($payment->beneficiaryAddressLine2);
+
 		return implode($this->separator, $values);
 	}
 
